@@ -2,6 +2,10 @@
 """Minimum Operations"""
 
 def minOperations(n):
+    """
+    min Operations
+    Get fewest # of operations needed to result in exactly n H characters
+    """
     if n < 2:
         return 0
     factor_list = []
