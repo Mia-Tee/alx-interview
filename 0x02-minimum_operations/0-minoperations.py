@@ -8,7 +8,6 @@ def minOperations(n):
     operations = 0
     divisor = 2
 
-    """Factorize n"""
     while n > 1:
         while n % divisor == 0:
             operations += divisor
