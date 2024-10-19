@@ -2,16 +2,14 @@
 """Minimum Operations"""
 
 def minOperations(n):
-    if n <= 1:
+    if n < 2:
         return 0
-
-    operations = 0
-    divisor = 2
-
-    while n > 1:
-        while n % divisor == 0:
-            operations += divisor
-            n //= divisor
-        divisor += 1
-
-    return operations
+    factor_list = []
+    i = 1
+    while n != 1:
+        i += 1
+        if n % i == 0:
+            while n % i == 0:
+                n /= i
+                factor_list.append(i)
+    return sum(factor_list)
