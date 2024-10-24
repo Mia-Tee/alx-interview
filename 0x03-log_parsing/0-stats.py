@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+"""Log parsing task"""
 import re
 
 
